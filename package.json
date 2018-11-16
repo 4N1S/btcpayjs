@@ -1,0 +1,44 @@
+{
+  "name": "btcpayjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --mode development",
+    "build": "cross-env NODE_ENV=production webpack --config webpack.config.js --mode production"
+  },
+    "repository": {
+    "type": "git",
+    "url": "git+https://github.com/4N1S/btcpayjs.git"
+  },
+  "keywords": [
+    "webpack",
+    "babel",
+    "sass"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "7.0.0-beta.44",
+    "@babel/preset-env": "7.0.0-beta.44",
+    "babel-loader": "8.0.0-beta.2",
+    "clean-webpack-plugin": "^0.1.19",
+    "cross-env": "^5.1.4",
+    "css-loader": "^0.28.11",
+    "extract-text-webpack-plugin": "4.0.0-beta.0",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.8.3",
+    "sass-loader": "^7.0.1",
+    "style-loader": "^0.20.3",
+    "webpack": "4.5.0",
+    "webpack-cli": "2.0.14",
+    "webpack-dev-server": "^3.1.3"
+  },
+  "dependencies": {
+    "babel-polyfill": "6.26.0",
+    "btcpay": "git+https://github.com/btcpayserver/node-btcpay.git",
+    "fs": "0.0.1-security",
+    "net": "^1.0.2",
+    "request": "^2.88.0",
+    "tls": "0.0.1"
+  }
+}
